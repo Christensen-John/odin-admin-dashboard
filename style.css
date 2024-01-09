@@ -2,13 +2,17 @@
 	BASIC STRUCTURE OF THE PAGE
 */
 
+html {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .structure-container {
 	display: grid;
 	gap: 0px;
 	/* grid-template-rows: 200px 200px; */
 	/* grid-template-columns: 200px 200px; */
-	grid-template-columns: minmax(100px 1fr) (400px 5fr);
-	grid-template-rows: minmax(100px 1fr) (400px 5fr);
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr 5fr
 }
 
 .nav {
@@ -29,4 +33,35 @@
 	grid-column: 2 / 3;
 	background-color: aquamarine;
 	padding: 15px;
+}
+
+/**
+	Navbar style
+*/
+.nav {
+	color: white;
+}
+
+.nav-heading {
+	padding-bottom: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+	font-size: ;
+	font-weight: bolder;
+}
+
+.navlink {
+	display: flex;
+	align-items: center;
+	padding-bottom: 15px;
+}
+
+.navlink > h2 {
+	padding-left: 10px;
+}
+
+.navlink:nth-child(7) {
+	padding-bottom:  40px;
+
 }
