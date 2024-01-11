@@ -20,7 +20,7 @@ html {
 	grid-row: 1 / 3;
 	grid-column: 1 / 2;
 	background-color: skyblue;
-	padding: 15px;
+	padding: 15px 15px 5px 15px;
 }
 
 .header {
@@ -32,7 +32,7 @@ html {
 	grid-row: 2 / 3;
 	grid-column: 2 / 3;
 	background-color: aquamarine;
-	padding: 15px;
+	padding: 0px 15px 15px 15px;
 }
 
 /**
@@ -73,7 +73,7 @@ html {
 .header {
 	display: flex;
 	flex-direction: column;
-	padding: 15px 30px 5px 30px;
+	padding: 5px 30px 5px 30px;
 }
 
 .header-row {
@@ -125,12 +125,18 @@ input[type="search"] {
 }
 
 .greeting-container h1 {
-	font-size: 1.1rem;
+	font-size: 1.25rem;
 }
 
 .greeting-container p {
-	font-size: 0.75rem;
+	font-size: 0.85rem;
 	margin-bottom: 5px;
+}
+
+.control-buttons button {
+	background-color: skyblue;
+	padding: 5px 20px 5px 20px;
+	border-radius: 20px;
 }
 
 /**
@@ -138,7 +144,6 @@ input[type="search"] {
 */
 .main {
 	display: flex;
-	padding: 20px;
 }
 
 .main-left-section {
@@ -151,26 +156,40 @@ input[type="search"] {
 
 .main-heading {
 	font-size: 1.15rem;
-	margin-top: 15px;
-	margin-bottom: 5px;
+	height: 1.5rem;
+	align-self: baseline;
+	margin: 20px 0px 5px 0px;
 }
 
-/**
-	MAIN LEFT SECTION STYLE
-*/
 .main-left-section {
 	display: flex;
 	flex-direction: column;
 	margin-right: 15px;
 }
 
-#project-heading {
-	flex: 1;
-	align-self: baseline;
+.main-right-section {
+	display: flex;
+	flex-direction: column;
 }
 
 .card-container {
 	flex: 20;
+}
+
+.announcement-container,
+.trending-container {
+	display: flex;
+	flex-direction: column;
+	justify-items: stretch;
+	justify-content: stretch;
+}
+
+.announcements,
+.trending {
+	display: flex;
+	flex-direction: column;
+	justify-items: stretch;
+	justify-content: stretch;
 }
 
 /**
@@ -187,20 +206,41 @@ input[type="search"] {
 	CARD STYLE
 */
 .card {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+}
+
+.card h1 {
+	font-size: 1rem;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.card-buttons {
+	align-self: flex-end;
+	margin-top: auto;
+}
+.card-buttons img {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/** 
+	SHARED STYLES
+*/
+.card,
+.announcements,
+.trending {
 	background-color: white;
 	padding: 10px;
 	border-radius: 10px;
 }
 
-.card h1 {
-	font-size: 1rem;
-	margin-bottom: 10px;
-}
-
-.card p {
+.card p,
+.announcement p {
 	font-size: 0.85rem;
 }
-
 /** _____________________________________*/
 /**
 	OLD GRID ATTEMPT
