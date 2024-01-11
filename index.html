@@ -10,25 +10,52 @@
 	<body>
 		<div class="structure-container">
 			<div class="header">
-				<div class="search-container">
-					<input type="text" name="search" id="search" />
-				</div>
-				<div class="notification-container">
-					<img src="" alt="Notification Icon" />
-					<img src="" alt="Profile Picture" />
-					<h1 class="Username usrname-small">John Christensen</h1>
-				</div>
-				<div class="greeting-container">
-					<img src="" alt="Profile Picture" />
-					<div class="greeting">
-						<p class="greeting">Hi there,</p>
-						<h1 class="username usrname-large">John Christensen</h1>
+				<div class="header-row header-top-row" id="header-top-row">
+					<div class="header-column header-column-left">
+						<div class="search-container">
+							<img
+								src="/img/search_FILL0_wght400_GRAD0_opsz24.svg"
+								alt="Search Icon"
+							/>
+							<input type="search" name="search" id="search" />
+						</div>
+					</div>
+					<div class="header-column header-column-right">
+						<div class="notification-container">
+							<img
+								src="/img/notifications_active_FILL0_wght400_GRAD0_opsz24.svg"
+								alt="Notification Icon"
+							/>
+							<img
+								src="/img/profile-pictures/profile-picture-main.jpg"
+								alt="Profile Picture"
+								class="profile-picture profile-icon"
+							/>
+							<h1 class="Username usrname-small">John Christensen</h1>
+						</div>
 					</div>
 				</div>
-				<div class="control-buttons">
-					<button class="control-btn" id="new-btn">New</button
-					><button class="control-btn" id="upload-btn">Upload</button
-					><button class="control-btn" id="share-btn">Share</button>
+				<div class="header-row header-bottom-row" id="header-bottom-row">
+					<div class="header-column header-column-left">
+						<div class="greeting-container">
+							<img
+								src="/img/profile-pictures/profile-picture-main.jpg"
+								alt="Profile Picture"
+								class="profile-picture profile-main"
+							/>
+							<div class="greeting">
+								<p class="greeting">Hi there,</p>
+								<h1 class="username usrname-large">John Christensen</h1>
+							</div>
+						</div>
+					</div>
+					<div class="header-column header-column-right">
+						<div class="control-buttons">
+							<button class="control-btn" id="new-btn">New</button
+							><button class="control-btn" id="upload-btn">Upload</button
+							><button class="control-btn" id="share-btn">Share</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="nav">
@@ -115,76 +142,79 @@
 			</div>
 
 			<div class="main">
-				<h1 class="project-heading">Your Projects</h1>
-				<div class="card-container">
-					<div class="card">
-						<h1 class="card-title">Super Cool Project</h1>
-						<p class="card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-							alias inventore odio repellat nobis voluptatibus magnam nihil
-							consequatur aperiam cumque.
-						</p>
-						<div class="card-buttons">
-							<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+				<div class="main-left-section">
+					<h1 class="main-heading" id="project-heading">Your Projects</h1>
+					<div class="card-container">
+						<div class="card">
+							<h1 class="card-title">Super Cool Project</h1>
+							<p class="card-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+								alias inventore odio repellat nobis voluptatibus magnam nihil
+								consequatur aperiam cumque.
+							</p>
+							<div class="card-buttons">
+								<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+							</div>
 						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-title">Less Cool Project</h1>
-						<p class="card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-							laborum unde mollitia assumenda et praesentium est sit libero.
-							Laboriosam, nisi!
-						</p>
-						<div class="card-buttons">
-							<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+						<div class="card">
+							<h1 class="card-title">Less Cool Project</h1>
+							<p class="card-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+								laborum unde mollitia assumenda et praesentium est sit libero.
+								Laboriosam, nisi!
+							</p>
+							<div class="card-buttons">
+								<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+							</div>
 						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-title">Impossible App</h1>
-						<p class="card-description">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
-							reprehenderit ullam similique doloremque officiis aperiam velit
-							provident veritatis corporis alias.
-						</p>
-						<div class="card-buttons">
-							<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+						<div class="card">
+							<h1 class="card-title">Impossible App</h1>
+							<p class="card-description">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+								reprehenderit ullam similique doloremque officiis aperiam velit
+								provident veritatis corporis alias.
+							</p>
+							<div class="card-buttons">
+								<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+							</div>
 						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-title">Easy Peasy App</h1>
-						<p class="card-description">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Quibusdam corrupti commodi quam, eligendi perferendis facere minus
-							ipsam inventore natus. Deleniti.
-						</p>
-						<div class="card-buttons">
-							<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+						<div class="card">
+							<h1 class="card-title">Easy Peasy App</h1>
+							<p class="card-description">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Quibusdam corrupti commodi quam, eligendi perferendis facere
+								minus ipsam inventore natus. Deleniti.
+							</p>
+							<div class="card-buttons">
+								<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+							</div>
 						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-title">Ad Blocker</h1>
-						<p class="card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-							nostrum natus ullam alias non numquam provident minus enim ex ad.
-						</p>
-						<div class="card-buttons">
-							<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+						<div class="card">
+							<h1 class="card-title">Ad Blocker</h1>
+							<p class="card-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+								nostrum natus ullam alias non numquam provident minus enim ex
+								ad.
+							</p>
+							<div class="card-buttons">
+								<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+							</div>
 						</div>
-					</div>
-					<div class="card">
-						<h1 class="card-title">Money Maker</h1>
-						<p class="card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Voluptatum eligendi fugiat pariatur porro quaerat accusamus
-							adipisci iste tempore atque animi!
-						</p>
-						<div class="card-buttons">
-							<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+						<div class="card">
+							<h1 class="card-title">Money Maker</h1>
+							<p class="card-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Voluptatum eligendi fugiat pariatur porro quaerat accusamus
+								adipisci iste tempore atque animi!
+							</p>
+							<div class="card-buttons">
+								<img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="side-container">
-					<h1 class="announcements">Announcements</h1>
+				<div class="main-right-section">
+					<h1 class="main-heading" id="announcement-heading">Announcements</h1>
 					<div class="announcements">
 						<div class="announcement">
 							<h1 class="announcement-title"></h1>
@@ -211,7 +241,7 @@
 							</p>
 						</div>
 					</div>
-					<h1 class="trending">Trending</h1>
+					<h1 class="main-heading" id="trending-heading">Trending</h1>
 					<div class="trending">
 						<div class="trending-user">
 							<img src="" alt="A user profile" class="profile-picture" />
